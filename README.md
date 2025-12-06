@@ -64,7 +64,7 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
        │  │         │                              │                │ │
        │  │         ↓                              ↓                │ │
        │  │  ┌──────────────────┐         ┌──────────────────┐      │ │
-       │  │  │ 📍 us-east-1a   │         │ 📍 us-east-1b   │      │ │
+       │  │  │   us-east-1a     │         │    us-east-1b    │      │ │
        │  │  │                  │         │                  │      │ │
        │  │  │ ┌──────────────┐ │         │ ┌──────────────┐ │      │ │
        │  │  │ │   PUBLIC     │ │         │ │    PUBLIC    │ │      │ │
@@ -92,7 +92,7 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
        │  │  │ │ │t3.medium │ │ │         │ │ │t3.medium │ │ │      │ │
        │  │  │ │ │          │ │ │         │ │ │          │ │ │      │ │
        │  │  │ │ │┌────────┐│ │ │         │ │ │┌────────┐│ │ │      │ │
-       │  │  │ │ ││📦 Pods││ │ │         │ │ ││📦 Pods ││ │ │      │ │
+       │  │  │ │ ││  Pods  ││ │ │         │ │ ││  Pods  ││ │ │      │ │
        │  │  │ │ ││ (Apps) ││ │ │         │ │ ││ (Apps) ││ │ │      │ │
        │  │  │ │ │└────────┘│ │ │         │ │ │└────────┘│ │ │      │ │
        │  │  │ │ └──────────┘ │ │         │ │ └──────────┘ │ │      │ │
