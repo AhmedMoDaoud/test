@@ -2,7 +2,7 @@
 
 Complete AWS EKS infrastructure deployment using Terraform for a production-ready e-commerce platform.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Architecture](#architecture)
