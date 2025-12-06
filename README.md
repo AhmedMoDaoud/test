@@ -64,7 +64,7 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
        │  │         │                              │                │ │
        │  │         ↓                              ↓                │ │
        │  │  ┌──────────────────┐         ┌──────────────────┐      │ │
-       │  │  │ 📍 us-east-1a    │         │ 📍 us-east-1b   │      │ │
+       │  │  │ 📍 us-east-1a   │         │ 📍 us-east-1b   │      │ │
        │  │  │                  │         │                  │      │ │
        │  │  │ ┌──────────────┐ │         │ ┌──────────────┐ │      │ │
        │  │  │ │   PUBLIC     │ │         │ │    PUBLIC    │ │      │ │
