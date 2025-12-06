@@ -35,13 +35,13 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architectures
 
-### Infrastructure Diagram
 
+### Network Architecture
 
 ```
-### Network Architecture
+
 
 
 Internet
@@ -57,7 +57,7 @@ Private Subnets (2 AZs)
         └── Pods (Your Applications)
 ```
 
-### Architecture Diagram
+### Infrastructure Diagram
 
 ![Architecture Diagram](architecture-diagram.png)
 
