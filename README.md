@@ -43,7 +43,7 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
 ```
 ### Network Architecture
 
-```
+
 Internet
     ↓
 Internet Gateway
