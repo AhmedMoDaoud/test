@@ -61,8 +61,7 @@ Private Subnets (2 AZs)
 
 ![Architecture Diagram](architecture-diagram.png)
 ```
-**TRAFFIC FLOW  && KEY COMPONENTS**
-ذذ
+### TRAFFIC FLOW  && KEY COMPONENTS
 ╔════════════════════════════════════════════════════════════════════════╗
 ║                             TRAFFIC FLOW                               ║
 ╠════════════════════════════════════════════════════════════════════════╣
