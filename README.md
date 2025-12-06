@@ -262,7 +262,7 @@ admin_user_arn       = "arn:aws:iam::YOUR_ACCOUNT_ID:user/YOUR_USERNAME"
  - terraform validate
 ```
 
-![Initialize Terraform](https://drive.google.com/file/d/1q1T-G23zdUKEUeTdokGWNhhiHgfBvTf9/view?usp=drive_link)
+[![Initialize Terraform](thumbnail.png)](https://drive.google.com/file/d/1q1T-G23zdUKEUeTdokGWNhhiHgfBvTf9/view?usp=drive_link)
 
 ### 4. Plan the Deployment
 
