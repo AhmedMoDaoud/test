@@ -57,12 +57,14 @@ Private Subnets (2 AZs)
         └── Pods (Your Applications)
 ```
 
-### High-Level Component Diagram
+### Architecture Diagram
 
 ![Architecture Diagram](architecture-diagram.png)
-
+```
+**TRAFFIC FLOW  && KEY COMPONENTS**
+ذذ
 ╔════════════════════════════════════════════════════════════════════════╗
-║                           📊 TRAFFIC FLOW                              ║
+║                             TRAFFIC FLOW                               ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║  1. Users → Internet Gateway                                           ║
 ║  2. Internet Gateway → ALB (in Public Subnets)                         ║
@@ -73,7 +75,7 @@ Private Subnets (2 AZs)
 ╚════════════════════════════════════════════════════════════════════════╝
 
 ╔════════════════════════════════════════════════════════════════════════╗
-║                         🔑 KEY COMPONENTS                              ║
+║                          KEY COMPONENTS                                ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║  🔴 Public Subnets:  Internet-facing resources (ALB, NAT)              ║
 ║  🟢 Private Subnets: Protected resources (EKS Nodes, Pods)             ║
