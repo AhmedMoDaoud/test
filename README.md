@@ -28,10 +28,10 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
 
 - **Multi-AZ deployment** for high availability
 - **Private worker nodes** for enhanced security
-- **AWS Load Balancer Controller** for automatic ALB/NLB provisioning
+- **AWS Load Balancer Controller** for automatic ALB provisioning
 - **EBS CSI Driver** for persistent storage
 - **IRSA (IAM Roles for Service Accounts)** for secure AWS API access
-- **Managed node groups** with auto-scaling capabilities
+- **Managed node groups** 
 
 ---
 
