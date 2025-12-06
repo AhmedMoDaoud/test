@@ -60,7 +60,7 @@ Private Subnets (2 AZs)
 
 ### Infrastructure Diagram
 
-![Architecture Diagram](architecture-diagram.png)
+![Architecture Diagram](images/architecture-diagram.png)
 
 ### TRAFFIC FLOW  && KEY COMPONENTS
 ```
@@ -118,14 +118,14 @@ Private Subnets (2 AZs)
 
 - VPC Console Screenshot:
 
-![vpc](vpc.png)
+![vpc](images/vpc.png)
 
 - EKS Console Screenshot:
 
-![eks](eks.png)
+![eks](images/eks.png)
 
 Nodes Console Screenshot:
-![nodes](nodes.png)
+![nodes](images/nodes.png)
 
 ### Terraform Resources Flow
 
@@ -262,7 +262,7 @@ admin_user_arn       = "arn:aws:iam::YOUR_ACCOUNT_ID:user/YOUR_USERNAME"
  - terraform validate
 ```
 
-[Initialize Terraform](https://drive.google.com/file/d/1q1T-G23zdUKEUeTdokGWNhhiHgfBvTf9/view?usp=drive_link)
+![Initialize Terraform](images/terrinit.png)
 
 ### 4. Plan the Deployment
 
@@ -270,7 +270,7 @@ admin_user_arn       = "arn:aws:iam::YOUR_ACCOUNT_ID:user/YOUR_USERNAME"
 terraform plan
 ```
 
-[📸 **ADD SCREENSHOT HERE: terraform plan summary**]
+![Terraform plan](images/terrinit.png)
 
 ### 5. Apply the Configuration
 
@@ -280,7 +280,7 @@ terraform apply
 
 Type `yes` when prompted.
 
-[📸 **ADD SCREENSHOT HERE: terraform apply completion**]
+![Terraform apply](images/terrapply.png)
 
 **Expected deployment time:** 15-20 minutes
 
