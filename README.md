@@ -288,6 +288,7 @@ Type `yes` when prompted.
 
 ## ⚙️ Configuration
 
+
 ### Project Structure
 
 ```
@@ -299,7 +300,6 @@ Type `yes` when prompted.
 ├── terraform.tfvars  # Variable values (create this file)
 └── README.md         # This file
 ```
-
 ### Customizing the Deployment
 
 #### Change AWS Region
@@ -382,8 +382,6 @@ terraform apply tfplan
 2. EKS control plane (8-10 minutes)
 3. Node group (3-5 minutes)
 4. Add-ons and ALB controller (2-3 minutes)
-
-[📸 **ADD SCREENSHOT HERE: Terraform apply progress**]
 
 ### Step 6: Save Outputs
 
