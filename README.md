@@ -175,11 +175,16 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
 - Kube-proxy for service routing
 
 **Console Screenshot**
-*VPC*
+
+- VPC Console Screenshot:
+
 ![vpc](vpc.png)
-*EKS*
+
+- EKS Console Screenshot:
+
 ![eks](eks.png)
-*Nodes*
+
+Nodes Console Screenshot:
 ![nodes](nodes.png)
 
 ### Terraform Resources Flow
