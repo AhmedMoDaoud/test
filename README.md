@@ -39,7 +39,7 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
 
 ### Infrastructure Diagram
 
--******
+![Architecture Diagram](architecture-diagram.png)
 ```
 
 ### Network Architecture (ASCII Diagram)
@@ -174,7 +174,10 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
 - VPC CNI for pod networking
 - Kube-proxy for service routing
 
-[📸 **Optional: ADD SCREENSHOT HERE for AWS Console view**]
+**Console Screenshot**
+![vpc](vpc.png)
+![eks](eks.png)
+![nodes](nodes.png)
 
 ### Terraform Resources Flow
 
@@ -208,12 +211,12 @@ graph LR
 
 ### Required Tools
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| **Terraform** | ≥ 1.5.0 | Infrastructure provisioning |
-| **AWS CLI** | ≥ 2.0 | AWS API interactions |
-| **kubectl** | ≥ 1.28 | Kubernetes management |
-| **Helm** | ≥ 3.0 | (Optional) Package management |
+|     Tool     | Version | Purpose                       |
+|--------------|---------|-------------------------------|
+| **Terraform**| ≥ 1.5.0 | Infrastructure provisioning   |
+| **AWS CLI**  | ≥ 2.0   | AWS API interactions          |
+| **kubectl**  | ≥ 1.28  | Kubernetes management         |
+| **Helm**     | ≥ 3.0   | (Optional) Package management |
 
 ### AWS Requirements
 
@@ -516,12 +519,7 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
-**Expected output:**
-```
-NAME                         STATUS   ROLES    AGE   VERSION
-ip-10-10-3-xxx.ec2.internal  Ready    <none>   5m    v1.30.x
-ip-10-10-4-xxx.ec2.internal  Ready    <none>   5m    v1.30.x
-```
+
 
 [📸 **ADD SCREENSHOT HERE: kubectl get nodes output**]
 
