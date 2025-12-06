@@ -39,9 +39,27 @@ This project provisions a complete Kubernetes infrastructure on AWS EKS with the
 
 ### Infrastructure Diagram
 
-![Architecture Diagram](architecture-diagram.png)
+
+```
+### Network Architecture
+
+```
+Internet
+    ↓
+Internet Gateway
+    ↓
+Public Subnets (2 AZs)
+    ├── NAT Gateway
+    └── Application Load Balancers
+        ↓
+Private Subnets (2 AZs)
+    └── EKS Worker Nodes
+        └── Pods (Your Applications)
 ```
 
+### High-Level Component Diagram
+
+![Architecture Diagram](architecture-diagram.png)
 
 ╔════════════════════════════════════════════════════════════════════════╗
 ║                           📊 TRAFFIC FLOW                              ║
@@ -160,33 +178,6 @@ aws configure
 # Enter your Access Key ID, Secret Access Key, Region, and Output format
 ```
 
-### Installation Commands
-
-```bash
-# Install Terraform (macOS)
-brew install terraform
-
-# Install Terraform (Linux)
-wget https://releases.hashicorp.com/terraform/1.6.0/terraform_1.6.0_linux_amd64.zip
-unzip terraform_1.6.0_linux_amd64.zip
-sudo mv terraform /usr/local/bin/
-
-# Install AWS CLI
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-
-# Install kubectl
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-
-# Verify installations
-terraform version
-aws --version
-kubectl version --client
-```
-
----
 
 ## 🧩 Infrastructure Components
 
@@ -216,18 +207,18 @@ kubectl version --client
 - **Instance Type:** t3.medium (2 vCPU, 4 GB RAM)
 - **Desired Capacity:** 2 nodes
 - **Min Size:** 2 nodes
-- **Max Size:** 4 nodes (for auto-scaling)
+- **Max Size:** 4 nodes
 - **AMI Type:** AL2_x86_64 (Amazon Linux 2)
 - **Disk Size:** 20 GB per node
 
 ### Add-ons
 
-| Add-on | Version | Purpose |
-|--------|---------|---------|
-| **EBS CSI Driver** | Latest | Persistent storage for pods |
-| **VPC CNI** | Latest | Pod networking |
-| **CoreDNS** | Latest | DNS resolution |
-| **kube-proxy** | Latest | Network proxy |
+| **Add-on**         | Version | Purpose                     |
+|--------------------|---------|-----------------------------|
+| **EBS CSI Driver** | Latest  | Persistent storage for pods |
+| **VPC CNI**        | Latest  | Pod networking              |
+| **CoreDNS**        | Latest  | DNS resolution              |
+| **kube-proxy**     | Latest  | Network proxy               |
 
 ### AWS Load Balancer Controller
 
