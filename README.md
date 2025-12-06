@@ -258,10 +258,11 @@ admin_user_arn       = "arn:aws:iam::YOUR_ACCOUNT_ID:user/YOUR_USERNAME"
 ### 3. Initialize Terraform
 
 ```bash
-terraform init
+ - terraform init
+ - terraform validate
 ```
 
-[📸 **ADD SCREENSHOT HERE: terraform init output**]
+![Initialize Terraform](https://drive.google.com/file/d/1q1T-G23zdUKEUeTdokGWNhhiHgfBvTf9/view?usp=drive_link)
 
 ### 4. Plan the Deployment
 
